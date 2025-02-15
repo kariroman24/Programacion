@@ -1,27 +1,21 @@
 export default class Cl_seccion {
-    contructor() {
+    constructor(){
         this.contEstudiantes = 0;
         this.acumNotas = 0;
-        this.contAprobados = 0;
         this.contReprobados = 0;
+        this.contAprobados = 0;
     }
-    procesarEstudiante(estudiante) {
+
+    procesarEstudiante(estudiante){
         this.contEstudiantes++;
-        this.acumNotas += estudiante.NotaFinal;
-        if(estudiante.NotaFinal >= 49) {
+        this.acumNotas += estudiante.nota;
+        if(estudiante.nota < 48){
+            this.contReprobados++;
+        }else{
             this.contAprobados++;
         }
-        else {
-            this.contReprobados++;
-        }
     }
-    promedioSeccion() {
+    promedioSeccion(){
         return this.acumNotas / this.contEstudiantes;
-    }
-    totalAprobados() {
-        return this.contAprobados;
-    }
-    totalReprobados() {
-        return this.contReprobados;
     }
 }

@@ -1,18 +1,18 @@
 export default class Cl_estudiante {
-constructor(cedula, notaFinal) {
-this.cedula = cedula;
-this.notaFinal = notaFinal;
-}
-set Cedula(cedula) {
-this.cedula = +cedula;
-}
-set NotaFinal(notaFinal) {
-this.notaFinal = +notaFinal;
-}
-get Cedula() {
-return this.cedula;
-}
-get NotaFinal() {
-return this.notaFinal; 
-}
+    constructor(cedula, nota) {
+        this.cedula = cedula;
+        this.nota = nota;
+    }
+    set cedula(cedula) {
+        this._cedula = cedula;
+    }
+    get cedula() {
+        return this._cedula;
+    }
+    set nota(nota) {
+        this._nota = nota;
+    }
+    get nota() {
+        return this._nota;
+    }
 }
