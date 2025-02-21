@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="articuloForm">
+      <h1>La Bodega</h1>
+      <input type="text" id="articuloForm_inCosto" placeholder="Costo"></input>
+      <button id="articuloForm_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Ganancias</h3>
+      <div id="mainForm_salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./js/principal.js";
+      new Cl_principal()
+    </script>
+</html>

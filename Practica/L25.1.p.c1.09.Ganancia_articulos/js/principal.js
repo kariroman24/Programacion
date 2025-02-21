@@ -31,6 +31,6 @@ Tienda.procesarArticulo(articulo8);
 
 let salida=document.getElementById("salida");
 salida.innerHTML = `
-La ganancia sera de Bs.${Tienda.gananciaTotal()}<br>
+La ganancia sera de Bs: ${Tienda.gananciaTotal()}<br>
 El codigo del articulo con mayor precio de venta es ${Tienda.codigoPrecioMayor()}<br>
 `
