@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTBOL</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <section id="partidoForm">
+        <h3>Resultados del partido</h3>
+        <input type="text" id="partidoForm_inResultado" placeholder="Resultado" />
+        <button id="partidoForm_btProcesar">Procesar</button> 
+      </section>
+      <section id="mainForm">
+        <h3>Resultados del equipo</h3>
+        <table id="mainForm_tabla">
+          <tr>
+            <th>Ganados</th>
+            <th>Porcentaje</th>
+          </tr>
+        </table>
+        <div id="salida"></div>
+      </section>
+</body>
+<script type="module">
+    import Cl_principal from "./js/principal.js";
+    new Cl_principal()
+  </script>
+</html>
