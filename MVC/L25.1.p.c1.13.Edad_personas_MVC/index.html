@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRUPO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="personaForm">
+      <h1>Datos de la persona</h1>
+      <input type="text" id="personaForm_inEdad" placeholder="Edad"></input>
+      <button id="personaForm_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Info del grupo</h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <td>Edad</td>
+        </tr>
+      </table>
+      <div id="mainForm_salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./js/principal.js";
+      new Cl_principal()
+    </script>
+</html>
